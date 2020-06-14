@@ -1,0 +1,60 @@
+// 產品介紹
+.productDetail{
+
+    //產品圖片
+    .productPic{
+    //將圖片向外拉開以佔滿螢幕  
+        margin-left: -15px;
+        margin-right: -15px;
+      img{
+        max-width: 100%;
+        object-fit:cover;
+        height:360px;
+        @include md-width(){
+            height: auto;
+        }
+      }
+    }
+   //價格區塊
+    .productDetailCard{
+        //卡片往上移
+        margin-top:-32px;
+        border:none;
+       @include md-width(){
+        margin-top:0;       
+       //調整價格區塊
+       //100%/12格＝8.33333，往左移1格(8.33333)＋1 gutters(30px)
+       transform: translateX(calc(-8.33333% - 30px)); 
+        }
+    }
+    
+    // 價格
+    .productPrice{
+        @include md-width(){
+           width: 99%;
+        }
+    }
+
+    .onsaleTag{
+        @include md-width(){
+           left:1.5rem;
+           top:1.5rem;
+        }
+    }
+    // 加入購物車按鈕
+    .addToCart{
+        width: 99.8%;
+        @include md-width(){
+            width: auto;
+        }
+    }
+    // 數量按鈕 
+    .btnQua{
+        width: 50%;
+        @include md-width(){
+            width: 37%;
+        }
+    }
+}
+
+

@@ -1,0 +1,200 @@
+---
+title: Boostrap payment
+layout: ./app/checkout.ejs
+engine: ejs
+current: payment
+theme: dark
+---
+
+<div class="checkOut  d-md-flex ">
+        <!-- 收合選單 -->
+    <div class=" container ">
+        <div class="row">
+            <div class="col-12  col-md-6 col-xl-4  order-md-2">
+                <div class="accordion" id="accordionExample">
+                    <div class="checkoutCard card border-0 ">
+                    <!-- card-header -->
+                        <div class="card-header p-0 " id="headingOne">
+                            <h6 class="mb-0 ">
+                                <button class="checkoutCardHeader btn btn-link btn-block bg-white-4 text-decoration-none border-0 text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Order Summary
+                            
+                                <svg class="bi bi-chevron-up text-secondary pos-absolute rotate" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                </svg>
+                                </button>  
+                            </h6>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <!-- card-body -->
+                            <div class="card-body checkoutCardBody bg-white-4 p-3 p-xl-5 ">
+                                <table class="checkoutList table  table-borderless mb-0 ">
+                                    <thead>
+                                        <tr class="mb-2 ">
+                                            <th class="checkoutTh p-0 pb-2 pb-md-3">
+                                                <img class="img-fluid checkoutPic " src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80" alt="Tatami Cup">
+                                            </th>
+                                            <th class="align-middle p-0 pb-2 pb-md-3 " colspan="2 ">
+                                                Tatami Cup ×1
+                                            </th>
+                                            <th class="align-middle p-0 pb-2 pb-md-3 font-weight-normal text-right">
+                                                NT$1,080
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <th class="p-0 pb-3 pb-md-3  pb-md-3">
+                                                <img class="  img-fluid checkoutPic" src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80" alt="Baifan Bowl">
+                                            </th>
+                                            <td class="align-middle p-0 pb-3 pb-md-3  font-weight-bold" colspan="2">
+                                                Baifan Bowl ×2
+                                            </td>
+                                            <!-- <td>Otto</td> -->
+                                            <td class="align-middle p-0 pb-3 pb-md-3  text-right">
+                                                NT$3,600
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <th class="align-middle p-0 pt-3 pb-2 pb-md-3 font-weight-normal">
+                                                Subtotal
+                                            </th>
+                                            <td class="align-middle p-0  pt-3 pb-2 pb-md-3" colspan="2"></td>
+                                            <td class="align-middle text-right p-0  pt-3 pb-2 pb-md-3">
+                                                NT$4,680
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="align-middle p-0 pb-3 pb-md-3  font-weight-normal">
+                                                Shipping
+                                            </th>
+                                            <td class="align-middle p-0 pb-3 pb-md-3 " colspan="2"></td>
+                                            <td class="align-middle text-right p-0 pb-3 pb-md-3  ">
+                                                NT$80
+                                            </td>
+                                        </tr>
+                                    
+                                        <tr>
+                                            <th class="align-middle p-0 pt-3 font-weight-bold h4">
+                                                Total
+                                            </th>
+                                            <td class="align-middle p-0 pt-3" colspan="2"></td>
+                                            <td class="align-middle text-right p-0 pt-3 font-weight-bold h4">
+                                                NT$4,760
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main col-12 col-md-6 col-xl-7 offset-xl-1 order-md-1">
+                <!-- 麵包屑 -->
+                <nav class="" aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent py-4 px-0 mb-0">
+                        <li class="breadcrumb-item breadcrumb-divider "><a href="#" class="text-secondary">Cart</a></li>
+                        <li class="breadcrumb-item  active" aria-current="page"><a href="#">Information</a></li>
+                        <li class="breadcrumb-item "><a href="#" class="paymentText font-weight-bold">Payment</a></li>
+                    </ol>
+                </nav>
+
+                <!-- form表單-->
+                <form>
+                    <h5 class="">Information</h5>  
+                    <div class="accordion" id="accordionContact">
+                        <div class="card ">
+                            <div class="paymentCardHeader card-header  p-0  border-0" id="infoContact">
+                                <h2 class="mb-0">
+                                    <button class="paymentHeader btn btn-link btn-block text-left  bg-white text-decoration-none border-0 btnlineH" type="button" data-toggle="collapse" data-target="#collapseContact" aria-expanded="true" aria-controls="collapseContact">
+                                        Contact
+                                        <span class="contactSpan ml-md-4 text-third font-sm d-none d-md-inline-block text-truncate">Joanne Lin / Joanne@mail.com / +886 912-345-678</span>
+                                        <!-- icon -->
+                                        <svg class="bi bi-chevron-down text-secondary pos-absolute " width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </button>
+                                </h2>
+                            </div>
+                        
+                            <div id="collapseContact" class="collapse " aria-labelledby="infoContact" data-parent="#accordionContact">
+                                <div class="card-body px-3 pb-3 pt-0 border-0">
+                                    <ul class="paymentList list-unstyled text-sm mb-0">
+                                        <li class="font-sm text-third ">Joanne Lin</li>
+                                        <li class="font-sm text-third ">Joanne@mail.com</li>
+                                        <li class="font-sm text-third ">+886 912-345-678</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ship to -->
+                        <div class="card ">
+                            <div class="card-header p-0  border-0 paymentCardHeader" id="infoShip">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left paymentHeader bg-white text-decoration-none border-0 btnlineH  collapsed" type="button" data-toggle="collapse" data-target="#collapseShip" aria-expanded="false" aria-controls="collapseShip">Ship to <span class="shiptoSpan text-third font-sm d-none d-md-inline-block text-truncate">3F., No. 2, Ln. 1, Hello 2nd Rd., Woohoo Dist., Kaohsiung…</span>
+
+                                        <!-- icon -->
+                                        <svg class="bi bi-chevron-down text-secondary pos-absolute " width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                        </svg>
+                                    </button>
+                                </h2>
+                            </div>
+                            
+                            <div id="collapseShip" class="collapse " aria-labelledby="infoShip" data-parent="#accordionContact">
+                                <div class="card-body  px-3 pb-3 pt-0 border-0">
+                                    <ul class="paymentList list-unstyled text-sm mb-0">
+                                        <li class="font-sm text-third ">3F., No. 2, Ln. 1, Hello 2nd Rd.,</li>
+                                        <li class="font-sm text-third ">Woohoo Dist., Kaohsiung City 806,</li>
+                                        <li class="font-sm text-third ">Taiwan  </li>               
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="mt-4 mt-md-5">Credit Card</h5>               
+                    <!-- card number -->
+                    <div class="form-group  mb-2"> 
+                        <input type="text" class="form-control form-control-lg" id="InputCardNumber" placeholder="Card number">
+                    </div>
+                    <!-- name on card -->
+                    <div class="form-group  mb-2">
+                        <input type="text" class="form-control form-control-lg" id="InputCardName" placeholder="Name on card">
+                    </div>
+                    
+                    <div class="form-row mb-4 p-0 mb-md-5">
+                    <!-- 卡片效期 -->
+                        <div class="form-group col-md-6 mb-2">
+                            <input type="text" class="form-control form-control-lg" id="InputCardDate" placeholder="Expiration date (MM / YY)">
+                        </div>
+                    <!-- 安全碼-->
+                        <div class="form-group col-md-6 mb-0">
+                            <input type="text" class="form-control form-control-lg" id="InputSecurityCode" placeholder="Security code">
+                        </div>
+                    </div>
+
+                    
+                    <!--Pay now-->
+                    <div class="form-row d-flex align-items-center border-bottom borderHr ">
+                        <div class="col-12 col-md-6 order-md-2">
+                            <a href="done.html" role="btn" class="btn  btn-secondary btn-lg customBtn mb-4 mb-md-5 w-100">Pay now</a>
+                        </div>
+                        <div class="col-md-6 order-md-1 text-md-left  text-center mb-4">
+                            <a href="checkout.html"  class="text-secondary ">
+                                <!-- < icon -->
+                                <svg class="bi bi-chevron-left mr-1 " width="1em" height="1.1875em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                </svg>Return to information
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

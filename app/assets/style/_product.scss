@@ -1,0 +1,44 @@
+
+
+// 瀑布流
+.productCardColumn{
+
+    // column-count: 2;內建更改會無法調整order  
+    .card{
+        //設定為inline-block才能設定寬度，圖片要設定為w-100
+        display:inline-block;
+        //寬度使用100%/2格-中間一邊各佔4px，再利用space-between推開
+        width: calc(100% /2 - 4px ); 
+       @include md-width(){
+            .d-md-block{
+                display:block;
+            }
+           width: 100%;
+       }
+    }   
+   .h-161{
+       height: 161px;
+    }
+
+    // 產品瀑布流使用
+    @include md-width(){
+        .h-md-240{
+            height: 240px;
+        }
+        .h-md-350{
+            height: 350px;
+        }
+        .h-md-480{
+            height: 480px;
+        }
+    }
+    //欄寬3
+   
+    .card-columns{
+        column-count: 3 ;
+    }
+}
+
+.pagination{ 
+    cursor:pointer;
+}

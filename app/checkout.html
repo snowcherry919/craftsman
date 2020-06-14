@@ -1,0 +1,305 @@
+---
+title: Boostrap checkout
+layout: ./app/checkout.ejs
+engine: ejs
+current: checkout
+theme: dark
+---
+
+<div class="checkOut  d-md-flex ">
+        <!-- 收合選單 -->
+    <div class=" container ">
+        <div class="row">
+            <div class="col-12  col-md-6 col-xl-4 order-md-2">
+                <div class="accordion" id="accordionExample">
+                    <!-- checkoutCard  -->
+                    <div class="checkoutCard card border-0 ">
+                    <!-- card-header -->
+                        <div class="card-header p-0 " id="headingOne">
+                            <h6 class="mb-0 ">
+                                <button class="checkoutCardHeader btn btn-link btn-block bg-white-4 text-decoration-none border-0 text-left " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Order Summary
+                                    <span class="totalPrice font-weight-bold ">NT$4,760</span>
+                                    <!-- 箭頭svg     -->
+                                    <svg class="bi bi-chevron-up text-secondary pos-absolute rotate " width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                                    </svg>
+                                </button>   
+                            </h6>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <!-- card-body -->
+                        <div class="card-body checkoutCardBody bg-white-4 p-3 p-xl-5 "> 
+                            <table class="checkoutList  table  table-borderless mb-0 ">
+                                <thead>
+                                    <tr class="mb-2 ">
+                                        <th class="checkoutTh p-0 pb-2 pb-md-3">
+                                            <img class="img-fluid checkoutPic " src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80" alt="Tatami Cup">
+                                        </th>
+
+                                        <th class="align-middle p-0 pb-2 pb-md-3 " colspan="2 ">
+                                            Tatami Cup ×1
+                                        </th>
+                                
+                                        <th class="align-middle p-0 pb-2 pb-md-3 font-weight-normal text-right">
+                                            NT$1,080
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-bottom">
+                                        <th class="p-0 pb-3 pb-md-3  pb-md-3">
+                                            <img class="  img-fluid checkoutPic" src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80" alt="Baifan Bowl">
+                                        </th>
+                                        <td class="align-middle p-0 pb-3 pb-md-3  font-weight-bold" colspan="2">
+                                            Baifan Bowl ×2
+                                        </td>
+                               
+                                        <td class="align-middle p-0 pb-3 pb-md-3  text-right">
+                                            NT$3,600
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <th class="align-middle p-0 pt-3 pb-2 pb-md-3 font-weight-normal">
+                                            Subtotal
+                                        </th>
+                                        <td class="align-middle p-0  pt-3 pb-2 pb-md-3" colspan="2"></td>
+                          
+                                        <td class="align-middle text-right p-0  pt-3 pb-2 pb-md-3">
+                                            NT$4,680
+                                        </td>
+                                    </tr>
+                                    <tr class="border-bottom">
+                                        <th class="align-middle p-0 pb-3 pb-md-3  font-weight-normal">
+                                            Shipping
+                                        </th>
+                                        <td class="align-middle p-0 pb-3 pb-md-3 " colspan="2"></td>
+                                 
+                                        <td class="align-middle text-right p-0 pb-3 pb-md-3  ">
+                                            NT$80
+                                        </td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <th class="align-middle p-0 pt-3 font-weight-bold h4">
+                                            Total
+                                        </th>
+                                        <td class="align-middle p-0 pt-3" colspan="2"></td>
+                                   
+                                        <td class="align-middle text-right p-0 pt-3 font-weight-bold h4">
+                                            NT$4,760
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="main col-12 col-md-6 col-xl-7 offset-xl-1 order-md-1">
+                <!-- 麵包屑 -->
+                <nav class="" aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent py-4 px-0 mb-0">
+                        <li class="breadcrumb-item breadcrumb-divider ">
+                            <a href="#" class="text-secondary">
+                                Cart
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item  active" aria-current="page">
+                            <a href="#" class="font-weight-bold">
+                                Information
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item ">
+                            <a href="#" class="paymentText">
+                                Payment
+                            </a>
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- form表單-->
+                <form>               
+                    <div class="form-group mb-md-2">
+                        <h5 class="">Contact information</h5>        
+                        <!-- email -->
+                        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                    </div>   
+                    <!-- checkbox 自訂樣式                 -->
+                    <label class="customCheckbox font-sm text-third py-1" for="exampleCheck1">
+                        <input type="checkbox" checked="checked" class="customInput mr-1 " id="exampleCheck1" >
+                        <span class="checkmark "></span>
+                        Keep me up to date on news and special offers
+                    </label>
+                    <!-- </div> -->
+
+                    <!-- shopping address -->
+                    <h5>Shipping address</h5>
+                    
+                    <div class="form-row">
+                        <!-- name -->
+                        <div class="form-group col-md-6 mb-2">  
+                            <input type="text" class="form-control form-control-lg" id="exampleInputName" placeholder="Name">
+                        </div>
+                        <!-- phone -->
+                        <div class="form-group col-md-6 mb-2">
+                            <input type="phone" class="form-control form-control-lg" id="exampleInputPhone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-row p-0 ">
+                    <!-- country -->
+                        <div class="form-group col-md-6 mb-0">
+                            <select class="form-control  form-control-lg  mb-2 ">
+                                <option value=" " disabled selected>Country/Region</option>
+                                <option value="taiwan">Taiwan</option>
+                                <option value="japan">Japan</option>
+                                <option value="hongKong">Hong Kong</option>
+                            </select>
+                        </div>
+                        <!-- city -->
+                        <div class="form-group col-md-6  mb-0">
+                            <select class="form-control  form-control-lg  mb-2 ">
+                                <option value=" " disabled selected>City</option>
+                                <option value="Kaohsiung">Kaohsiung</option>
+                                <option value="Taipei ">Taipei </option>
+                                <option value="Taichung ">Taichung </option>
+                            </select>
+                        </div>
+                    </div>
+                
+                    <!-- address -->
+                    <div class="form-group  mb-4 mb-md-5">
+                        <input type="text" class="form-control form-control-lg" id="inputAddress" placeholder="Address">
+                    </div>
+                    <!--Continue to payment  -->
+                    <div class="form-row d-flex align-items-center border-bottom borderHr">
+                        <div class="col-12 col-md-6 order-md-2 ">
+                            <a href="payment.html" role="button" class="btn btn-secondary btn-lg customBtn w-100 mb-4 mb-md-5"> Continue to payment</a>
+                        </div>
+                        <div class="col-md-6 order-md-1 text-md-left  text-center mb-4">
+                            <!-- 加入購物車modal -->
+                            <a href="#" data-toggle="modal" data-target="#cartList"  class=" text-secondary  text-decoration-none" >
+                                <!-- < icon -->
+                                <svg class="bi bi-chevron-left mr-1" width="1em" height="1.1875em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                </svg>Return to cart 
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 購物車Modal -->
+<div class="cartListModal modal right fade " id="cartList" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="cartListLabel" aria-hidden="true" >
+    <div class="modal-dialog ">
+        <div class="cartListContent modal-content  ">
+            <div class="cartListTitle modal-header py-3  border-0">
+                <!-- 標題 -->
+                <h4 class=" modal-title  font-weight-bold  fz-md-h1 " id="cartListLabel"> Cart List 
+                    <sup class="text-secondary">3</sup>
+                </h4>
+                <!-- 刪除按鈕 -->
+                <button type="button" class="close closeBtn" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="h4 fz-md-h1 ">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body d-flex flex-column justify-content-between justify-content-md-start p-md-0 px-sm mb-3">
+                <ul class="cartList list-unstyled mb-md-0">
+                    <!-- list1 -->
+                    <li class="d-flex mb-2">
+                        <!-- 產品圖片  -->
+                        <div class="cartListPic">
+                            <img class="img-fluid"src="https://images.unsplash.com/photo-1556207944-1e0033a54801?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80" alt="">
+                        </div>
+                        <div class="cartListDes bg-white-4 p-2 pl-md-3 ">  
+                            <h6 class="card-title d-flex justify-content-between font-weight-bold mb-1 ">Tatami Cup
+                                <i class="fas fa-times"></i>
+                            </h6>
+                            <div class="price d-flex  mb-3 ">
+                                <p class="discount text-third font-sm mb-0 mr-2 mr-md-2 ">NT$1,080</p>
+                                <del class="font-xxs mb-0 fz-md-sm  text-op4">NT$1,200</del>
+                            </div>
+                            <div class="quantityBtn d-flex justify-content-between align-items-center ">
+                                <!-- 數量 -->
+                                <div class="btnIcon btn-group  btn-group-sm " role="group" aria-label="...">
+                                    <button type="button" class="btn btn-white-4 py-0 border-0">
+                                        －
+                                    </button>
+                                    <button type="button" class="btn btn-white-4  py-0 border-0">1
+                                    
+                                    </button>
+                                    <button type="button" class="btn btn-white-4 py-0 border-0">  
+                                        +
+                                    </button> 
+                                </div>
+                            
+                                <!-- 小計 -->
+                                <p class="font-weight-bold mb-0">NT$1,080</p>
+                            </div>
+                        </div> 
+                    </li>
+                    <!-- list2 -->
+                    <li class="d-flex mb-4">
+                    <!-- 產品圖片  -->
+                        <div class="cartListPic">
+                            <img class="img-fluid"src="https://images.unsplash.com/photo-1530006498959-b7884e829a04?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1566&q=80" alt="">
+                        </div>
+                        <div class="cartListDes bg-white-4 p-2 pl-md-3 ">  
+                            <h6 class="card-title d-flex justify-content-between font-weight-bold  mb-1 ">Baifan Bowl
+                                <i class="fas fa-times"></i>
+                            </h6>
+                            <div class="price d-flex">
+                                <p class="discount text-third">NT$1,800</p>
+                            </div>
+                            <div class="quantityBtn d-flex justify-content-between align-items-center ">
+                                <!-- 數量 -->
+                                <div class="btnIcon btn-group  btn-group-sm " role="group" aria-label="...">
+                                    <button type="button" class="btn btn-white-4 py-0 border-0">
+                                        －
+                                    </button>
+                                    <button type="button" class="btn btn-white-4  py-0 border-0">2
+                                    
+                                    </button>
+                                    <button type="button" class="btn btn-white-4 py-0 border-0">  
+                                        +
+                                    </button> 
+                                </div>
+                            
+                                <!-- 小計 -->
+                                <p class="font-weight-bold mb-0">NT$3,600</p>
+                            </div>
+                        </div>  
+                    </li>
+                    <!-- list-3 -->
+                    <li class="d-flex justify-content-end">
+                        <div class="cartListDes p-0  ">  
+                            <div class="d-flex justify-content-between align-items-center text-third mb-md-3 mt-md-4">
+                                <p class=" mb-md-0">Subtotal</p>
+                                <p class=" mb-md-0">NT$4,680</p>
+                            </div>  
+                            <div class="d-flex justify-content-between text-third mb-md-4">
+                                <p class="mb-4 mb-md-0">Shipping</p>
+                                <p class="mb-4 mb-md-0">NT$80</p>
+                            </div> 
+                            <div class="d-flex justify-content-between  h4 font-weight-bold mb-md-4">
+                                <p class=" mb-md-0">Total</p>
+                                <p class=" mb-md-0">NT$4,760</p>
+                            </div>         
+                        </div>  
+                    </li>
+                </ul>
+                <!-- checkout 按鈕 -->
+                <div class="modal-footer border-0 p-0 px-sm">
+                    <a href="checkout.html" role="button" class="customBtn btn btn-secondary m-0 border-0 w-100 detail-width  ">Checkout</a>
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>
