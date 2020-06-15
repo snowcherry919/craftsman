@@ -26,14 +26,12 @@
 // 簡介 card 
 .introduction{
     .card{      
-        // .card-text{
-        //     line-height: 1.5;
-        // }
+       
         img{
             border-radius: 2px;   }
         .introCardBody{
             @include md-width(){
-            max-width: 350px;
+            // max-width: 350px;
             margin: 0 auto;
             }
         }

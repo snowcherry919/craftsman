@@ -97,7 +97,7 @@ function clean() {
 }
 
 function deploy() {
-  return gulp.src(envOptions.deploySrc)
+  return gulp.src('./dist/**/*')
     .pipe($.ghPages());
 }
 
