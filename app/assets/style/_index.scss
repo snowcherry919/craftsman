@@ -25,18 +25,23 @@
 }
 // 簡介 card 
 .introduction{
-    .card{      
+         
        
-        img{
-            border-radius: 2px;  
-         }
-        .introCardBody{
-            @include md-width(){
-            max-width: 350px;
-            margin: 0 auto;
-            }
+    .introCardPic{
+        border-radius: 2px; 
+        
+        @include md-width(){
+            width:540px;
+            height: auto;
+        }
+        }
+    .introCardBody{
+        @include md-width(){
+        max-width: 350px;
+        margin: 0 auto;
         }
     }
+    
 }
 
 // artdirector
