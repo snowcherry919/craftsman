@@ -2,58 +2,59 @@
 .banner {
     margin-top: -60px;
     height: 640px;
-    @include media-breakpoint-up(md) { 
+
+    @include media-breakpoint-up(md) {
         margin-top: -76px;
         height: 800px;
     }
+
     // 背景圖
     .bannerBg {
         background: url(https://images.unsplash.com/photo-1557644978-f61037cfbe49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
-        top:0;
-        bottom:0;
+        top: 0;
+        bottom: 0;
         @include bg-cover;
-       
+
     }
- 
-    .bannerTitle{
+
+    .bannerTitle {
         margin-top: 188px;
         line-height: 1.35;
-        @include media-breakpoint-up(md) { 
+
+        @include media-breakpoint-up(md) {
             margin-top: 235px;
         }
-    }      
+    }
 }
+
 // 簡介 card 
-.introduction{
-    .introCardPic{
-        border-radius: 2px; 
-            width:100%;
-            height: auto;
-        }
-    .introCardBody{
+.introduction {
+    .introCardPic {
+        border-radius: 2px;
+        width: 100%;
+        height: auto;
+    }
+
+    .introCardBody {
         @include media-breakpoint-up(md) {
-        max-width: 350px;
-        margin: 0 auto;
+            max-width: 350px;
+            margin: 0 auto;
         }
     }
-    
+
 }
 
 // artdirector
-.artDirector{
+.artDirector {
     background-image: url(https://images.unsplash.com/photo-1579825317824-2cc3aa33f75a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);
     @include bg-cover;
-    max-width:100%;
-    .artDirectorText{
+    max-width: 100%;
+
+    .artDirectorText {
         height: 400px;
     }
-    .artDirectorTitle{
+
+    .artDirectorTitle {
         max-width: 350px;
-    }   
+    }
 }
-
-
-
-
-
-

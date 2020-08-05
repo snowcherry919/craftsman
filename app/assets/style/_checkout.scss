@@ -1,142 +1,162 @@
-.checkOut{
-    .checkoutCard{
-        @include media-breakpoint-up(md){
+.checkOut {
+    .checkoutCard {
+        @include media-breakpoint-up(md) {
             margin-top: 67px;
-        }    
+        }
     }
-    
-    .checkoutCardHeader{
-        padding: 18px 16px 19px 16px;  
+
+    .checkoutCardHeader {
+        padding: 18px 16px 19px 16px;
     }
-    button.bg-white-4:hover{
-        background: $white-4!important;
+
+    button.bg-white-4:hover {
+        background: $white-4 !important;
     }
-    .checkoutTh{
-        max-width:59px;
+
+    .checkoutTh {
+        max-width: 59px;
     }
-    .checkoutPic{
-        max-width:48px;
+
+    .checkoutPic {
+        max-width: 48px;
         height: 48px;
     }
+
     // ＾ icon位置調整
-    .bi-chevron-up.pos-absolute{
+    .bi-chevron-up.pos-absolute {
         right: 16px;
-        top:20px;
+        top: 20px;
     }
 
     // 箭頭旋轉
-    .rotate{
+    .rotate {
         transform: rotate(0deg);
         transition: all .5s;
-        &.active{
+
+        &.active {
             transform: rotate(180deg);
         }
     }
 
-    .card-header{
+    .card-header {
         @include media-breakpoint-up(md) {
             display: none;
         }
     }
-    .totalPrice{
+
+    .totalPrice {
         margin-left: 84px;
         //預設隱藏，用toggle開關
-        display:none;
-    }  
+        display: none;
+    }
+
     // payment.html使用
-    .paymentHeader{
+    .paymentHeader {
         padding: 19px 16px 18px 16px;
     }
 
     .paymentList {
         line-height: 21px;
     }
-    .btnlineH{
+
+    .btnlineH {
         line-height: 1.2;
     }
-    .card-header.paymentCardHeader{
+
+    .card-header.paymentCardHeader {
         @include media-breakpoint-up(md) {
             display: block;
         }
     }
-    .bi-chevron-down.pos-absolute{
+
+    .bi-chevron-down.pos-absolute {
         right: 16px;
-        top:20px;
+        top: 20px;
     }
 }
-.main{
 
-    .breadcrumb{
-        .breadcrumb-item + .breadcrumb-item::before{
-            content:'>';
+.main {
+
+    .breadcrumb {
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: '>';
         }
     }
 
-    ::placeholder{
-        color:rgba(0,0,0,.6);
+    ::placeholder {
+        color: rgba(0, 0, 0, .6);
     }
 
-    .form-control-lg{
+    .form-control-lg {
         font-size: 1rem;
         height: 56px;
     }
-    select{
-        color:rgba(0,0,0,.6);
+
+    select {
+        color: rgba(0, 0, 0, .6);
     }
-  
-    .paymentBtn.btn-lg{
+
+    .paymentBtn.btn-lg {
         font-size: 1rem;
         padding: 0;
     }
-    .paymentBtn.btn{
-        padding:19px 0 18px;
-        border:0;
+
+    .paymentBtn.btn {
+        padding: 19px 0 18px;
+        border: 0;
         line-height: 1.2;
         margin-bottom: 1.5rem;
-        @include media-breakpoint-up(md){
+
+        @include media-breakpoint-up(md) {
             max-width: 100%;
         }
-        
+
     }
-    .border-bottom.borderHr{
-        border-color:#00000060!important;
+
+    .border-bottom.borderHr {
+        border-color: #00000060 !important;
     }
+
     .shiptoSpan {
-        margin-left: 1.875rem;   
-    } 
+        margin-left: 1.875rem;
+    }
 }
 
 // payment
 // Information在md以上時的文字顯示寬度
-.text-truncate{
+.text-truncate {
     @include media-breakpoint-up(md) {
-        max-width:180px;
+        max-width: 180px;
     }
+
     @include media-breakpoint-up(md) {
-        max-width:250px;
+        max-width: 250px;
     }
-    
+
 }
 
 //done.html
-.doneHeader{
-    .doneCopany{
-        color:#ffffff;
-        z-index:1;
+.doneHeader {
+    .doneCopany {
+        color: #ffffff;
+        z-index: 1;
+
         @include media-breakpoint-up(md) {
-            color:$primary;
+            color: $primary;
         }
     }
 }
+
 // 背景圖
-.doneBg{
+.doneBg {
     position: absolute;
     background: url(https://images.unsplash.com/photo-1525168986767-293e2138b969?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2734&q=80);
     @include bg-cover();
     top: 0;
     bottom: 0;
-    height: 100vh; 
+    height: 100vh;
 }
-.doneText{
-    height: 100vh; 
+
+.doneText {
+    height: 100vh;
 }

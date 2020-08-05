@@ -1,60 +1,66 @@
 // 產品介紹
-.productDetail{
+.productDetail {
 
     //產品圖片
-    .productPic{
-    //將圖片向外拉開以佔滿螢幕  
+    .productPic {
+        //將圖片向外拉開以佔滿螢幕  
         margin-left: -15px;
         margin-right: -15px;
-      img{
-        max-width: 100%;
-        object-fit:cover;
-        height:360px;
-        @include media-breakpoint-up(md) {
-            height: auto;
-        }
-      }
-    }
-   //價格區塊
-    .productDetailCard{
-        //卡片往上移
-        margin-top:-32px;
-        border:none;
-        @include media-breakpoint-up(md) {
-        margin-top:0;       
-       //調整價格區塊
-       //100%/12格＝8.33333，往左移1格(8.33333)＋1 gutters(30px)
-       transform: translateX(calc(-8.33333% - 30px)); 
-        }
-    }
-    
-    // 價格
-    .productPrice{
-        @include media-breakpoint-up(md) {
-           width: 99%;
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            height: 360px;
+
+            @include media-breakpoint-up(md) {
+                height: auto;
+            }
         }
     }
 
-    .onsaleTag{
+    //價格區塊
+    .productDetailCard {
+        //卡片往上移
+        margin-top: -32px;
+        border: none;
+
         @include media-breakpoint-up(md) {
-           left:1.5rem;
-           top:1.5rem;
+            margin-top: 0;
+            //調整價格區塊
+            //100%/12格＝8.33333，往左移1格(8.33333)＋1 gutters(30px)
+            transform: translateX(calc(-8.33333% - 30px));
         }
     }
+
+    // 價格
+    .productPrice {
+        @include media-breakpoint-up(md) {
+            width: 99%;
+        }
+    }
+
+    .onsaleTag {
+        @include media-breakpoint-up(md) {
+            left: 1.5rem;
+            top: 1.5rem;
+        }
+    }
+
     // 加入購物車按鈕
-    .addToCart{
+    .addToCart {
         width: 99.8%;
+
         @include media-breakpoint-up(md) {
             width: auto;
         }
     }
+
     // 數量按鈕 
-    .btnQua{
+    .btnQua {
         width: 50%;
+
         @include media-breakpoint-up(md) {
             width: 37%;
         }
     }
 }
-
-

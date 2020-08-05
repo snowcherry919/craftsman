@@ -1,85 +1,98 @@
 // modal 購物車使用
-.modal.right .modal-dialog{     
+.modal.right .modal-dialog {
     position: fixed;
-    right:0;
+    right: 0;
     margin: auto;
     height: 100%;
-    transform: translate3d(0%, 0, 0);  
+    transform: translate3d(0%, 0, 0);
     width: 100vw;
-    @include media-breakpoint-up(md) { 
-        position: fixed;    
-        margin:auto;
+
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        margin: auto;
         width: 540px;
-        transform: translate3d(0%, 0, 0);  
+        transform: translate3d(0%, 0, 0);
     }
+
     .modal-content {
         height: 100%;
         overflow-y: auto;
     }
- 
-    .cartListContent{
-        @include media-breakpoint-up(md) { 
-        max-width: 540px;
-        padding: 48px;     
+
+    .cartListContent {
+        @include media-breakpoint-up(md) {
+            max-width: 540px;
+            padding: 48px;
         }
     }
-    .cartListTitle{
-        padding-left:15px;
-        padding-right:15px;
-    }
-    .closeBtn{
+
+    .cartListTitle {
+        padding-left: 15px;
         padding-right: 15px;
-    }  
-    .cartList{
-        @include media-breakpoint-up(md) { 
-           width: 100%;
-           margin-top: 28px; 
-        }      
     }
-   .btn-group-sm>.btn {
+
+    .closeBtn {
+        padding-right: 15px;
+    }
+
+    .cartList {
+        @include media-breakpoint-up(md) {
+            width: 100%;
+            margin-top: 28px;
+        }
+    }
+
+    .btn-group-sm>.btn {
         font-size: 1rem;
     }
-    .cartListPic{    
-      img{
-        max-width:96px;
-        height:98px;
-        object-fit:cover; 
-        @include media-breakpoint-up(md){
-        height: 112px;    
-        max-width: 112px;    
+
+    .cartListPic {
+        img {
+            max-width: 96px;
+            height: 98px;
+            object-fit: cover;
+
+            @include media-breakpoint-up(md) {
+                height: 112px;
+                max-width: 112px;
+            }
         }
-      }
     }
-    .cartListDes{
+
+    .cartListDes {
         width: 100%;
-        @include media-breakpoint-up(md) { 
+
+        @include media-breakpoint-up(md) {
             width: 70%;
-            padding:1rem; 
-        }    
+            padding: 1rem;
+        }
     }
-    .discount{
+
+    .discount {
         margin-bottom: 0.875rem;
     }
 }
 
 // siderbar使用
-.modal.left .modal-dialog{     
+.modal.left .modal-dialog {
     position: fixed;
-    left:0;
+    left: 0;
     margin: auto;
     height: 100%;
-    transform: translate3d(0%, 0, 0);  
-  
-    .layoutModalContent{
+    transform: translate3d(0%, 0, 0);
+
+    .layoutModalContent {
         padding: 16px 15px;
         // height: 100vh;
         width: 100vw;
     }
+
     .modal-content {
         height: 100%;
         overflow-y: auto;
     }
-    .fa-angle-up{
+
+    .fa-angle-up {
         font-size: 24px;
     }
 
