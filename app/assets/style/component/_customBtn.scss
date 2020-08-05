@@ -1,64 +1,19 @@
-// .paymentBtn.btn-lg{
-//     font-size: 1rem;
-//     padding: 0;
-// }
-// .paymentBtn.btn{
-    
-//     padding:19px 0 18px;
-//     border:0;
-//     line-height: 1.2;
-//     margin-bottom: 1.5rem;
-//     @include md-width(){
-//         max-width: 100%;
-//     }
-    
-// }
-// .checkoutBtn{
-//     width: 100%;
-//     padding:19px 0 18px;
-  
- 
-//     @include md-width(){
-     
-//        width: 70%;
-//        line-height: 1.2;
-//        }
-    
-//    }
-// .cartBtn{
-//     font-size: 1rem;
-    
-//     @include md-width(){
-//         width: auto;
-//     }
-   
-// }
-// .shopBtn{
-//     line-height: 1.2;
-//     padding: 1.1875rem 0 1.125rem;font-size: 1rem;
-//     @include md-width(){
-//         display:inline-block;
-//         width: 160px;
-//     }
-// }
+
     .customBtn.btn-lg{
         font-size: 1rem;
         padding: 0;
     }
     .customBtn.btn{
-        
         padding:1.1875rem 0 1.125rem;
         border:0;
         line-height: 1.2;
-    
     }
     .done-width{
         position: absolute;
-        
         bottom: 24px;
-        width: 100%;
+        width: 92%;
         @include md-width(){
-            width: 57.3%;
+            width: 58%;
             position: static; 
         }
     }
