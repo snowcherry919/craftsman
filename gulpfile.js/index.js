@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
 const $ = require('gulp-load-plugins')({ lazy: false });
 const autoprefixer = require('autoprefixer');
 const minimist = require('minimist');
