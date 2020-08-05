@@ -6,7 +6,7 @@
     height: 100%;
     transform: translate3d(0%, 0, 0);  
     width: 100vw;
-    @include md-width(){
+    @include media-breakpoint-up(md) { 
         position: fixed;    
         margin:auto;
         width: 540px;
@@ -18,7 +18,7 @@
     }
  
     .cartListContent{
-        @include md-width(){
+        @include media-breakpoint-up(md) { 
         max-width: 540px;
         padding: 48px;     
         }
@@ -31,7 +31,7 @@
         padding-right: 15px;
     }  
     .cartList{
-        @include md-width(){
+        @include media-breakpoint-up(md) { 
            width: 100%;
            margin-top: 28px; 
         }      
@@ -52,16 +52,14 @@
     }
     .cartListDes{
         width: 100%;
-        @include md-width(){
+        @include media-breakpoint-up(md) { 
             width: 70%;
             padding:1rem; 
         }    
     }
-    
     .discount{
         margin-bottom: 0.875rem;
     }
-    
 }
 
 // siderbar使用
@@ -82,9 +80,7 @@
         overflow-y: auto;
     }
     .fa-angle-up{
-    
         font-size: 24px;
-    
     }
 
 }

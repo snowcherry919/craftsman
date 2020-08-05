@@ -43,7 +43,7 @@
     background-image: url(https://images.unsplash.com/photo-1580485978320-cc2bc7dcf569?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80);
     height: 224px;
     @include bg-cover;
-    @include md-width(){
+    @include media-breakpoint-up(md) {
         height: 400px;
     }
     
@@ -58,7 +58,7 @@
     .input-group-text{
         padding: 1.1875rem 1.5rem 1.125rem ;
         border: none;
-        @include md-width(){
+        @include media-breakpoint-up(md) {
             padding: 1.25rem 2.75rem 1.0625rem;
         }
     }

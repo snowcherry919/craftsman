@@ -2,7 +2,7 @@
 .banner {
     margin-top: -60px;
     height: 640px;
-    @include md-width(){
+    @include media-breakpoint-up(md) { 
         margin-top: -76px;
         height: 800px;
     }
@@ -18,22 +18,20 @@
     .bannerTitle{
         margin-top: 188px;
         line-height: 1.35;
-        @include md-width(){
+        @include media-breakpoint-up(md) { 
             margin-top: 235px;
         }
     }      
 }
 // 簡介 card 
 .introduction{
-         
-       
     .introCardPic{
         border-radius: 2px; 
             width:100%;
             height: auto;
         }
     .introCardBody{
-        @include md-width(){
+        @include media-breakpoint-up(md) {
         max-width: 350px;
         margin: 0 auto;
         }

@@ -12,18 +12,18 @@
         position: absolute;
         bottom: 24px;
         width: 92%;
-        @include md-width(){
+        @include media-breakpoint-up(md) { 
             width: 58%;
             position: static; 
         }
     }
     .detail-width{
-        @include md-width(){
+        @include media-breakpoint-up(md){
                 width: 70%!important;
             }
     }
     .index-width{
-        @include md-width(){
+        @include media-breakpoint-up(md){
             width: 35.95%;
         }
     }

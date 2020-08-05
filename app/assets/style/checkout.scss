@@ -1,6 +1,6 @@
 .checkOut{
     .checkoutCard{
-        @include md-width(){
+        @include media-breakpoint-up(md) {
             margin-top: 67px;
         }    
     }
@@ -34,7 +34,7 @@
     }
 
     .card-header{
-        @include md-width(){
+        @include media-breakpoint-up(md) {
             display: none;
         }
     }
@@ -57,7 +57,7 @@
         line-height: 1.2;
     }
     .card-header.paymentCardHeader{
-        @include md-width(){
+        @include media-breakpoint-up(md) {
             display: block;
         }
     }
@@ -83,7 +83,7 @@
         height: 56px;
     }
     select{
-           color:rgba(0,0,0,.6);
+        color:rgba(0,0,0,.6);
     }
   
     .paymentBtn.btn-lg{
@@ -91,7 +91,6 @@
         padding: 0;
     }
     .paymentBtn.btn{
-        
         padding:19px 0 18px;
         border:0;
         line-height: 1.2;
@@ -112,10 +111,10 @@
 // payment
 // Information在md以上時的文字顯示寬度
 .text-truncate{
-    @include md-width(){
+    @include media-breakpoint-up(md) {
         max-width:180px;
     }
-    @include lg-width(){
+    @include media-breakpoint-up(md) {
         max-width:250px;
     }
     
@@ -126,7 +125,7 @@
     .doneCopany{
         color:#ffffff;
         z-index:1;
-        @include md-width(){
+        @include media-breakpoint-up(md) {
             color:$primary;
         }
     }

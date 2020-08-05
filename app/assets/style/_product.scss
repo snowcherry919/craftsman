@@ -9,19 +9,19 @@
         display:inline-block;
         //寬度使用100%/2格-中間一邊各佔4px，再利用space-between推開
         width: calc(100% /2 - 4px ); 
-       @include md-width(){
+        @include media-breakpoint-up(md) {
             .d-md-block{
                 display:block;
             }
            width: 100%;
-       }
+        }
     }   
    .h-161{
        height: 161px;
     }
 
     // 產品瀑布流使用
-    @include md-width(){
+    @include media-breakpoint-up(md) {
         .h-md-240{
             height: 240px;
         }
