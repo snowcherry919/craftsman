@@ -44,7 +44,7 @@
         max-width:96px;
         height:98px;
         object-fit:cover; 
-        @include md-width(){
+        @include media-breakpoint-up(md){
         height: 112px;    
         max-width: 112px;    
         }

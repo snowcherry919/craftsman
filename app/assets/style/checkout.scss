@@ -1,6 +1,6 @@
 .checkOut{
     .checkoutCard{
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(md){
             margin-top: 67px;
         }    
     }
@@ -30,7 +30,7 @@
         transition: all .5s;
         &.active{
             transform: rotate(180deg);
-            }
+        }
     }
 
     .card-header{
@@ -93,7 +93,7 @@
         border:0;
         line-height: 1.2;
         margin-bottom: 1.5rem;
-        @include md-width(){
+        @include media-breakpoint-up(md){
             max-width: 100%;
         }
         

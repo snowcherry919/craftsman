@@ -100,7 +100,7 @@ h1>a:hover,li>a:hover{
     object-fit:cover;
 }
 
-@include md-width(){
+@include media-breakpoint-up(md){
     // 文字顏色
     .text-md-primary{
         color:#121212!important;

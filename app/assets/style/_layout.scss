@@ -13,7 +13,7 @@
     }
     .textColordark{
         color:$white;
-        @include md-width(){
+        @include media-breakpoint-up(md){
             color:$primary;
         }     
     }
