@@ -29,11 +29,11 @@
        
     .introCardPic{
         border-radius: 2px; 
-        
-        @include md-width(){
-            width:540px;
+            width:100%;
             height: auto;
-        }
+        // @include md-width(){
+            
+        // }
         }
     .introCardBody{
         @include md-width(){
